@@ -22,7 +22,7 @@ class UltimateBravery:
     `randomize_items` : items
     `randomize_runes` : runes
     """
-    def __init__(self, client : leaguepkg.Client_interface.Client):
+    def __init__(self, client : leaguepkg.Client.Client):
         self.data = Data()
         self.client = client
         self.avail_champ_ids = self.client.get_pickable_champions()
